@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="with=device-width,
+       initial scale =1.0"
+    />
+    <title>suzzytaskitchen</title>
+    
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?
+                family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <style>
+      
+      img {
+        width: 200px;
+        border-radius: 100px;
+        float: left;
+        margin-right: 50px;
+        max-height: 30vh;
+        
+      }
+      p {
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+    <section class="header">
+      <nav>
+        <a href="index.html"> <img src="images/logo.jpg" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+           <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>The number one service provider</h1>
+        <p>For all your events</p>
+        <a href="contact.html" class="hero-btn">Book Now </a>
+      </div>
+    </section>
+    <!-----Services----->
+    <section class="services">
+      <h1>Our Services</h1>
+      <p></p>
+
+      <div class="row">
+        <div class="services-col">
+          <a href="about.html"><h3>Photography and Videography</h3></a>
+          <p>
+            We design and build websites from scratch customised to your
+            specifications
+            <br />with a touch of quality
+          </p>
+        </div>
+        <div class="services-col">
+          <a href="about.html"><h3>Events Management</h3></a>
+          <p>
+            We design and build websites from scratch customised to your
+            specifications
+            <br />with a touch of quality
+          </p>
+        </div>
+
+        <div class="services-col">
+          <a href="about.html"><h3>Catering services</h3></a>
+          <p>
+            We give our clients an involvement hence paying attention to details
+            when
+            <br />designing and building applications (web, android and ios)
+            <br />we value quality
+          </p>
+        </div>
+
+        <div class="services-col">
+          <a href="about.html"><h3>DJ and PA services</h3></a>
+          <p>
+            Our cloud services include web hosting which comes with <br />
+            free domain and free ssl certificates.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="facilities">
+      
+
+      <div class="row">
+        <div class="facilities-col">
+          <img src="images/videography.jpg" />
+          <h3>Photography and Videography</h3>
+         
+        </div>
+
+        <div class="facilities-col">
+          <img src="images/events-management1.jpg" />
+          <h3>Events and Management</h3>
+          
+        </div>
+        <div class="facilities-col">
+          <img src="images/catering.jpg" />
+          <h3>Catering Services</h3>
+         
+        </div>
+        <div class="facilities-col">
+          <img src="images/DJ_and_PA.jpg" />
+          <h3>DJ and PA Services</h3>
+          
+        </div>
+      </div>
+    </section>
+    
+
+    <!--testimonials-->
+  
+
+    <!-----call to action------>
+    <section class="cta">
+      <h1>For your services needs</h1>
+      <a href="contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <!-------footer------->
+
+    <section class="footer">
+      <h4>Contact Us:</h4>
+      <p>
+       +254(0)729 856 581
+      </p>
+     
+      <div class="row">
+        <div class="icons-col">
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100078171185971"
+              >
+            </a>
+          </li>
+          <p>
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100078171185971"
+                >
+              
+            </li>
+          </p>
+        </div><div class="icons-col">
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100078171185971"
+              ><img src="images/facebook.jpg"
+            /></a>
+          </li>
+          <p>
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100078171185971"
+                ><h3>facebook</h3></a
+              >
+            </li>
+          </p>
+        </div>
+
+       
+
+        
+
+      
+
+        <div class="icons-col">
+          <li>
+            <a href="https://wa.me/254729856581"
+              ><img src="images/whatsapp.jpg"
+            /></a>
+          </li>
+          <p>
+            <li>
+              <a href="https://wa.me/254729856581"><h3>whatsapp</h3></a>
+            </li>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="signature">
+      <p>All Rights Reserved <br> Made by Adzec Software & Tech</p>
+    </section>
+
+    <!-------------JavaScript For Toggle Menu------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

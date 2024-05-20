@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="with=device-width,
+       initial scale =1.0"
+    />
+    <title>suzzytaskitchen</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?
+                family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <style>
+      img {
+        width: 200px;
+        border-radius: 100px;
+        float: left;
+        margin-right: 50px;
+      }
+      p {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="sub-header4">
+      <nav>
+        <a href="index.html"> <img src="images/logo.jpg" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>Contact Us</h1>
+    </section>
+    <!-----Contact us content--->
+
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.35869063734!2d36.68257916444628!3d-1.3028602789702999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1699733932821!5m2!1sen!2ske"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5></h5>
+              <p>Nairobi, Kenya</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+254(0)729 856 581</h5>
+              <p>Monday to Friday, 07.30am to 18.00pm</p>
+              <p>Saturday, Appointment Only</p>
+              <p>Sunday, closed</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>info@suzzytaskitchen.com</h5>
+              <p>Email us</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="file.php" method="post">
+            <input type="text" name="name" placeholder="Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email address"
+              required
+            />
+            <input type="text" name="subject" placeholder="Subject" required />
+            <textarea
+              rows="8"
+              name="message"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button type="submit" class="hero-btn red-btn">SEND</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-------footer------->
+
+    <section class="footer">
+      <h4>Contact Us:</h4>
+      <p>+254 (0)729 856 581</p>
+
+      <div class="row">
+        <div class="icons-col">
+          <li>
+            <a
+              href="https://www.facebook.com/profile.php?id=100078171185971"
+            ></a>
+          </li>
+          <p>
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100078171185971">
+              </a>
+            </li>
+          </p>
+        </div>
+        <div class="icons-col">
+          <li>
+            <a href="https://www.facebook.com/SuzzytasKitchen?mibextid=ZbWKwL"
+              ><img src="images/facebook.jpg"
+            /></a>
+          </li>
+          <p>
+            <li>
+              <a href="https://www.facebook.com/SuzzytasKitchen?mibextid=ZbWKwL"
+                ><h3>facebook</h3></a
+              >
+            </li>
+          </p>
+        </div>
+
+        <div class="icons-col">
+          <li>
+            <a href="https://wa.me/254729856581"
+              ><img src="images/whatsapp.jpg"
+            /></a>
+          </li>
+          <p>
+            <li>
+              <a href="https://wa.me/254729856581"><h3>whatsapp</h3></a>
+            </li>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="signature">
+      <p>
+        All Rights Reserved <br />
+        Made by Adzec Software & Tech
+      </p>
+    </section>
+
+    <!-------------JavaScript For Toggle Menu------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
